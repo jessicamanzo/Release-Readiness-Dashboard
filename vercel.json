@@ -1,15 +1,9 @@
-# Create vercel.json
 cat > vercel.json << 'EOF'
 {
-  "buildCommand": "",
-  "installCommand": "",
-  "devCommand": "",
-  "framework": null,
-  "public": "./",
   "cleanUrls": true,
-  "redirects": [
+  "rewrites": [
     {
-      "source": "/",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
